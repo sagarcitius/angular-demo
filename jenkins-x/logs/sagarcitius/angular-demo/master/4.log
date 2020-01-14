@@ -1,0 +1,137 @@
+
+Showing logs for build [32msagarcitius-angular-demo-master-mb67c-4[0m stage [32mfrom-build-pack[0m and container [32mstep-credential-initializer-tqzlc[0m
+{"level":"warn","ts":1579002227.2070386,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/0.8.0-**-support-backwards-incompats\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1579002227.2072985,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
+
+Showing logs for build [32msagarcitius-angular-demo-master-mb67c-4[0m stage [32mfrom-build-pack[0m and container [32mstep-working-dir-initializer-jfjql[0m
+{"level":"warn","ts":1579002228.21424,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1579002228.2152944,"logger":"fallback-logger","caller":"bash/main.go:64","msg":"Successfully executed command \"sh -c mkdir -p /workspace/source\"; output "}
+
+Showing logs for build [32msagarcitius-angular-demo-master-mb67c-4[0m stage [32mfrom-build-pack[0m and container [32mstep-place-tools[0m
+
+Showing logs for build [32msagarcitius-angular-demo-master-mb67c-4[0m stage [32mfrom-build-pack[0m and container [32mstep-git-source-sagarcitius-angular-demo-master-z7v5q[0m
+{"level":"warn","ts":1579002233.2893615,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/0.8.0-**-support-backwards-incompats\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1579002235.6416235,"logger":"fallback-logger","caller":"git/git.go:103","msg":"Successfully cloned https://github.com/***********/angular-demo.git @ v0.0.4 in path /workspace/source"}
+
+Showing logs for build [32msagarcitius-angular-demo-master-mb67c-4[0m stage [32mfrom-build-pack[0m and container [32mstep-git-merge[0m
+Using SHAs from PULL_REFS=master:ff639d151b8931367d1ea91a480cd9ae467df44c
+WARNING: no SHAs to merge, falling back to initial cloned commit
+
+Showing logs for build [32msagarcitius-angular-demo-master-mb67c-4[0m stage [32mfrom-build-pack[0m and container [32mstep-setup-jx-git-credentials[0m
+Generated Git credentials file /workspace/xdg_config/git/credentials
+
+Showing logs for build [32msagarcitius-angular-demo-master-mb67c-4[0m stage [32mfrom-build-pack[0m and container [32mstep-build-npmrc[0m
+Command "credential" is deprecated, it will be removed on Feb 1 2020.  This is replaced by Tekton's mounted secrets
+WARNING: failed to find Secret npm-token in namespace **
+
+Showing logs for build [32msagarcitius-angular-demo-master-mb67c-4[0m stage [32mfrom-build-pack[0m and container [32mstep-build-npm-install[0m
+
+> core-js@3.2.1 postinstall /workspace/source/node_modules/@angular-devkit/build-angular/node_modules/core-js
+> node scripts/postinstall || echo "ignore"
+
+[96mThank you for using core-js ([94m https://github.com/zloirock/core-js [96m) for polyfilling JavaScript standard library![0m
+
+[96mThe project needs your help! Please consider supporting of core-js on Open Collective or Patreon: [0m
+[96m>[94m https://opencollective.com/core-js [0m
+[96m>[94m https://www.patreon.com/zloirock [0m
+
+[96mAlso, the author of core-js ([94m https://github.com/zloirock [96m) is looking for a good job -)[0m
+
+
+> core-js@2.6.11 postinstall /workspace/source/node_modules/babel-runtime/node_modules/core-js
+> node -e "try{require('./postinstall')}catch(e){}"
+
+
+> core-js@3.6.2 postinstall /workspace/source/node_modules/core-js
+> node -e "try{require('./postinstall')}catch(e){}"
+
+
+> @angular/cli@8.3.21 postinstall /workspace/source/node_modules/@angular/cli
+> node ./bin/postinstall/script.js
+
+npm WARN formio-angular-demo@2.5.0 No repository field.
+npm WARN formio-angular-demo@2.5.0 No license field.
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.11 (node_modules/webpack-dev-server/node_modules/fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.11: wanted {"os":"darwin","arch":"any"} (current: {"os":"linux","arch":"x64"})
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.11 (node_modules/watchpack/node_modules/fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.11: wanted {"os":"darwin","arch":"any"} (current: {"os":"linux","arch":"x64"})
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.9 (node_modules/@angular/compiler-cli/node_modules/fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.9: wanted {"os":"darwin","arch":"any"} (current: {"os":"linux","arch":"x64"})
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@2.1.2 (node_modules/fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@2.1.2: wanted {"os":"darwin","arch":"any"} (current: {"os":"linux","arch":"x64"})
+
+added 1253 packages from 1149 contributors and audited 16729 packages in 28.738s
+found 2 high severity vulnerabilities
+  run `npm audit fix` to fix them, or `npm audit` for details
+
+Showing logs for build [32msagarcitius-angular-demo-master-mb67c-4[0m stage [32mfrom-build-pack[0m and container [32mstep-build-npm-test[0m
+
+> formio-angular-demo@2.5.0 test /workspace/source
+> echo 'Error: no test specified'
+
+Error: no test specified
+
+Showing logs for build [32msagarcitius-angular-demo-master-mb67c-4[0m stage [32mfrom-build-pack[0m and container [32mstep-build-container-build[0m
+[36mINFO[0m[0000] Downloading base image nginx:1.17.1-alpine   
+[36mINFO[0m[0002] Error while retrieving image from cache: getting file info: stat /workspace/sha256:20b62c392073deac500292d6b37c851bb4d00986edb3d73d08c0f0e65019ce6c: no such file or directory 
+[36mINFO[0m[0002] Downloading base image nginx:1.17.1-alpine   
+[36mINFO[0m[0003] Using files from context: [/workspace/source] 
+[36mINFO[0m[0006] cmd: EXPOSE                                  
+[36mINFO[0m[0006] Adding exposed port: 80/tcp                  
+[36mINFO[0m[0006] Skipping unpacking as no commands require it. 
+[36mINFO[0m[0006] Taking snapshot of full filesystem...        
+[36mINFO[0m[0006] Using files from context: [/workspace/source] 
+[36mINFO[0m[0008] COPY . /usr/share/nginx/html                 
+[36mINFO[0m[0022] Taking snapshot of files...                  
+[36mINFO[0m[0035] EXPOSE 80                                    
+[36mINFO[0m[0035] cmd: EXPOSE                                  
+[36mINFO[0m[0035] Adding exposed port: 80/tcp                  
+[36mINFO[0m[0035] No files changed in this command, skipping snapshotting. 
+2020/01/14 11:45:03 existing blob: sha256:e7c96db7181be991f19a9fb6975cdbbd73c65f4a2681348e63a141a2192a5f10
+2020/01/14 11:45:04 pushed blob: sha256:6e6d850d5b93f73c1b8ea14c5471352366091aff57a677bfc2b2df3605c1afd5
+2020/01/14 11:45:05 pushed blob: sha256:3fb6217217ef7b086ff12ef80db6a61ec86f4af3b65343f23280e2a74697535c
+2020/01/14 11:45:17 pushed blob: sha256:49c922a39dcd8baacdbbf7592ee70b21409a9737ffb19e839efaedd01c59bf58
+2020/01/14 11:45:17 746149138047.dkr.ecr.ap-south-1.amazonaws.com/***********/angular-demo:0.0.4: digest: sha256:8b52df836f4b7eff7ce39637688082884763606b1766d2f0786cea73975aab29 size: 758
+
+Showing logs for build [32msagarcitius-angular-demo-master-mb67c-4[0m stage [32mfrom-build-pack[0m and container [32mstep-build-post-build[0m
+no CVE provider running in the current ** namespace so skip adding image to be analysed
+
+Showing logs for build [32msagarcitius-angular-demo-master-mb67c-4[0m stage [32mfrom-build-pack[0m and container [32mstep-promote-changelog[0m
+Converted /workspace/source/charts/angular-demo to an unshallow repository
+Generating change log from git ref 59f0c707e879ea53cfcb38ff1ab0e12e19361c1e => 1def5e34d54e249c9dd7209b3c64772006222b42
+Associating user x-0 in users.jenkins.io with email sagar.pimparkar@citiustech.com to git GitProvider user with login -0 as emails match
+Adding label jenkins.io/git-github-userid=-0 to user x-0 in users.jenkins.io
+WARNING: Failed to enrich commit ff639d151b8931367d1ea91a480cd9ae467df44c with issues: User.jenkins.io "x-0" is invalid: metadata.labels: Invalid value: "-0": a valid label must be an empty string or consist of alphanumeric characters, '-', '_' or '.', and must start and end with an alphanumeric character (e.g. 'MyValue',  or 'my_value',  or '12345', regex used for validation is '(([A-Za-z0-9][-A-Za-z0-9_.]*)?[A-Za-z0-9])?')
+Associating user x-0 in users.jenkins.io with email sagar.pimparkar@citiustech.com to git GitProvider user with login -0 as emails match
+Adding label jenkins.io/git-github-userid=-0 to user x-0 in users.jenkins.io
+WARNING: Failed to enrich commit ff639d151b8931367d1ea91a480cd9ae467df44c with issues: User.jenkins.io "x-0" is invalid: metadata.labels: Invalid value: "-0": a valid label must be an empty string or consist of alphanumeric characters, '-', '_' or '.', and must start and end with an alphanumeric character (e.g. 'MyValue',  or 'my_value',  or '12345', regex used for validation is '(([A-Za-z0-9][-A-Za-z0-9_.]*)?[A-Za-z0-9])?')
+Finding issues in commit messages using git format
+WARNING: No release found for ***********/angular-demo and tag v0.0.4 so creating a new release
+Updated the release information at https://github.com/***********/angular-demo/releases/tag/v0.0.4
+generated: /workspace/source/charts/angular-demo/templates/release.yaml
+Created Release angular-demo-0-0-4 resource in namespace **
+Updating PipelineActivity ***********-angular-demo-master-4 with version 0.0.4
+Updated PipelineActivities ***********-angular-demo-master-4 with release notes URL: https://github.com/***********/angular-demo/releases/tag/v0.0.4
+
+Showing logs for build [32msagarcitius-angular-demo-master-mb67c-4[0m stage [32mfrom-build-pack[0m and container [32mstep-promote-helm-release[0m
+WARNING: No $CHART_REPOSITORY defined so using the default value of: http://jenkins-x-chartmuseum:8080
+Adding missing Helm repo: storage.googleapis.com https://storage.googleapis.com/chartmuseum.jenkins-x.io
+Successfully added Helm repository storage.googleapis.com.
+Adding missing Helm repo: jenkins-x-chartmuseum http://jenkins-x-chartmuseum:8080
+Successfully added Helm repository jenkins-x-chartmuseum.
+WARNING: No $CHART_REPOSITORY defined so using the default value of: http://jenkins-x-chartmuseum:8080
+Uploading chart file angular-demo-0.0.4.tgz to http://jenkins-x-chartmuseum:8080/api/charts
+Received 201 response: {"saved":true}
+
+Showing logs for build [32msagarcitius-angular-demo-master-mb67c-4[0m stage [32mfrom-build-pack[0m and container [32mstep-promote-jx-promote[0m
+WARNING: prow based install so skip waiting for the merge of Pull Requests to go green as currently there is an issue with gettingstatuses from the PR, see https://github.com/jenkins-x/**/issues/2410
+WARNING: No $CHART_REPOSITORY defined so using the default value of: http://jenkins-x-chartmuseum:8080
+Promoting app angular-demo version 0.0.4 to namespace **-staging
+Created Pull Request: https://github.com/***********/environment-apewheat-staging/pull/3
+Added label updatebot to Pull Request https://github.com/***********/environment-apewheat-staging/pull/3
+got git provider status pending from PR https://github.com/***********/environment-apewheat-staging/pull/3
+got git provider status pending from PR https://github.com/***********/environment-apewheat-staging/pull/3
+got git provider status pending from PR https://github.com/***********/environment-apewheat-staging/pull/3
+got git provider status pending from PR https://github.com/***********/environment-apewheat-staging/pull/3
+Pull Request https://github.com/***********/environment-apewheat-staging/pull/3 is merged at sha 437f17b3f893e1184b583ed15c0b4d15b856d58f
+Pull Request merged but we are not waiting for the update pipeline to complete!
