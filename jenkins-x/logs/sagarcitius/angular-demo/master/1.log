@@ -1,0 +1,148 @@
+
+Showing logs for build [32msagarcitius-angular-demo-master-tnc5h-1[0m stage [32mfrom-build-pack[0m and container [32mstep-credential-initializer-wtr5r[0m
+{"level":"warn","ts":1579000204.256729,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/0.8.0-**-support-backwards-incompats\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1579000204.258898,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
+
+Showing logs for build [32msagarcitius-angular-demo-master-tnc5h-1[0m stage [32mfrom-build-pack[0m and container [32mstep-working-dir-initializer-8jmj9[0m
+{"level":"warn","ts":1579000204.6198897,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1579000204.6233275,"logger":"fallback-logger","caller":"bash/main.go:64","msg":"Successfully executed command \"sh -c mkdir -p /workspace/source\"; output "}
+
+Showing logs for build [32msagarcitius-angular-demo-master-tnc5h-1[0m stage [32mfrom-build-pack[0m and container [32mstep-place-tools[0m
+
+Showing logs for build [32msagarcitius-angular-demo-master-tnc5h-1[0m stage [32mfrom-build-pack[0m and container [32mstep-git-source-sagarcitius-angular-demo-master-gpks2[0m
+{"level":"warn","ts":1579000208.7148354,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/0.8.0-**-support-backwards-incompats\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1579000211.067172,"logger":"fallback-logger","caller":"git/git.go:103","msg":"Successfully cloned https://github.com/***********/angular-demo.git @ v0.0.1 in path /workspace/source"}
+
+Showing logs for build [32msagarcitius-angular-demo-master-tnc5h-1[0m stage [32mfrom-build-pack[0m and container [32mstep-git-merge[0m
+Using SHAs from PULL_REFS=master:fcb9cead381b02edd94b70655350ceb5cc1b02dd
+WARNING: no SHAs to merge, falling back to initial cloned commit
+
+Showing logs for build [32msagarcitius-angular-demo-master-tnc5h-1[0m stage [32mfrom-build-pack[0m and container [32mstep-setup-jx-git-credentials[0m
+Generated Git credentials file /workspace/xdg_config/git/credentials
+
+Showing logs for build [32msagarcitius-angular-demo-master-tnc5h-1[0m stage [32mfrom-build-pack[0m and container [32mstep-build-npmrc[0m
+Command "credential" is deprecated, it will be removed on Feb 1 2020.  This is replaced by Tekton's mounted secrets
+WARNING: failed to find Secret npm-token in namespace **
+
+Showing logs for build [32msagarcitius-angular-demo-master-tnc5h-1[0m stage [32mfrom-build-pack[0m and container [32mstep-build-npm-install[0m
+
+> core-js@3.2.1 postinstall /workspace/source/node_modules/@angular-devkit/build-angular/node_modules/core-js
+> node scripts/postinstall || echo "ignore"
+
+[96mThank you for using core-js ([94m https://github.com/zloirock/core-js [96m) for polyfilling JavaScript standard library![0m
+
+[96mThe project needs your help! Please consider supporting of core-js on Open Collective or Patreon: [0m
+[96m>[94m https://opencollective.com/core-js [0m
+[96m>[94m https://www.patreon.com/zloirock [0m
+
+[96mAlso, the author of core-js ([94m https://github.com/zloirock [96m) is looking for a good job -)[0m
+
+
+> core-js@2.6.11 postinstall /workspace/source/node_modules/babel-runtime/node_modules/core-js
+> node -e "try{require('./postinstall')}catch(e){}"
+
+
+> core-js@3.6.2 postinstall /workspace/source/node_modules/core-js
+> node -e "try{require('./postinstall')}catch(e){}"
+
+
+> @angular/cli@8.3.21 postinstall /workspace/source/node_modules/@angular/cli
+> node ./bin/postinstall/script.js
+
+npm WARN formio-angular-demo@2.5.0 No repository field.
+npm WARN formio-angular-demo@2.5.0 No license field.
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.11 (node_modules/webpack-dev-server/node_modules/fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.11: wanted {"os":"darwin","arch":"any"} (current: {"os":"linux","arch":"x64"})
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.11 (node_modules/watchpack/node_modules/fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.11: wanted {"os":"darwin","arch":"any"} (current: {"os":"linux","arch":"x64"})
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.9 (node_modules/@angular/compiler-cli/node_modules/fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.9: wanted {"os":"darwin","arch":"any"} (current: {"os":"linux","arch":"x64"})
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@2.1.2 (node_modules/fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@2.1.2: wanted {"os":"darwin","arch":"any"} (current: {"os":"linux","arch":"x64"})
+
+added 1253 packages from 1149 contributors and audited 16729 packages in 29.943s
+found 2 high severity vulnerabilities
+  run `npm audit fix` to fix them, or `npm audit` for details
+
+Showing logs for build [32msagarcitius-angular-demo-master-tnc5h-1[0m stage [32mfrom-build-pack[0m and container [32mstep-build-npm-test[0m
+
+> formio-angular-demo@2.5.0 test /workspace/source
+> echo 'Error: no test specified'
+
+Error: no test specified
+
+Showing logs for build [32msagarcitius-angular-demo-master-tnc5h-1[0m stage [32mfrom-build-pack[0m and container [32mstep-build-container-build[0m
+[36mINFO[0m[0000] Downloading base image node:9-slim           
+[36mINFO[0m[0002] Error while retrieving image from cache: getting file info: stat /workspace/sha256:0e0175bbe4f8d9d104590d8d2c591017874e30977cb71aaff1cf6fa99479575c: no such file or directory 
+[36mINFO[0m[0002] Downloading base image node:9-slim           
+[36mINFO[0m[0003] Executing 0 build triggers                   
+[36mINFO[0m[0003] cmd: EXPOSE                                  
+[36mINFO[0m[0003] Adding exposed port: 8080/tcp                
+[36mINFO[0m[0003] Using files from context: [/workspace/source] 
+[36mINFO[0m[0006] Skipping unpacking as no commands require it. 
+[36mINFO[0m[0006] Taking snapshot of full filesystem...        
+[36mINFO[0m[0006] ENV PORT 8080                                
+[36mINFO[0m[0006] No files changed in this command, skipping snapshotting. 
+[36mINFO[0m[0006] EXPOSE 8080                                  
+[36mINFO[0m[0006] cmd: EXPOSE                                  
+[36mINFO[0m[0006] Adding exposed port: 8080/tcp                
+[36mINFO[0m[0006] No files changed in this command, skipping snapshotting. 
+[36mINFO[0m[0006] WORKDIR /usr/src/app                         
+[36mINFO[0m[0006] cmd: workdir                                 
+[36mINFO[0m[0006] Changed working directory to /usr/src/app    
+[36mINFO[0m[0006] Creating directory /usr/src/app              
+[36mINFO[0m[0006] Taking snapshot of files...                  
+[36mINFO[0m[0006] Using files from context: [/workspace/source] 
+[36mINFO[0m[0008] COPY . .                                     
+[36mINFO[0m[0022] Taking snapshot of files...                  
+[36mINFO[0m[0035] CMD ["npm", "start"]                         
+[36mINFO[0m[0035] No files changed in this command, skipping snapshotting. 
+2020/01/14 11:11:20 pushed blob: sha256:ed961bba738041a3fb1a5442cdcbdf734c3c74ec3bcc05a37e9d522a806eeb1e
+2020/01/14 11:11:20 pushed blob: sha256:b5811905b7b81355797fefd5c251adb4e0843be72bba6822f17b1dc29c1b3b4a
+2020/01/14 11:11:21 pushed blob: sha256:196b8e3c919d5639193ba6c6e54774528942041bbc37606631a2250502985c3c
+2020/01/14 11:11:21 pushed blob: sha256:e01bd28a434b56ffd2a3fe9aa99b9b69aecca69904843edd30b1ee7150d79904
+2020/01/14 11:11:21 pushed blob: sha256:7d083412657baa2dafba8d093034ef26f9ed2c90fb6ed95f76bb55aff03ed429
+2020/01/14 11:11:23 pushed blob: sha256:5bba3ecb4cd6374a19da45f2a3db0a9c0804984358b3bb4b666c28944016e5ff
+2020/01/14 11:11:23 pushed blob: sha256:a88538b9cd05cfa611e43a25582a95ad7879f6fa708b0386a26b71ee62235bb3
+2020/01/14 11:11:33 pushed blob: sha256:76dc6e2b570e979af0f14b2b703f72336c6a0e5f52c6f72c6b04730ac1d99f69
+2020/01/14 11:11:33 746149138047.dkr.ecr.ap-south-1.amazonaws.com/***********/angular-demo:0.0.1: digest: sha256:40e2dcf03c3801b468863bb9904d053974f9cb201fb59d69cafef4c1895a4821 size: 1408
+
+Showing logs for build [32msagarcitius-angular-demo-master-tnc5h-1[0m stage [32mfrom-build-pack[0m and container [32mstep-build-post-build[0m
+no CVE provider running in the current ** namespace so skip adding image to be analysed
+
+Showing logs for build [32msagarcitius-angular-demo-master-tnc5h-1[0m stage [32mfrom-build-pack[0m and container [32mstep-promote-changelog[0m
+Converted /workspace/source/charts/angular-demo to an unshallow repository
+Generating change log from git ref d822ddd8adc96966bb33c23d69f456c3ad2462fd => 299a992f11abfb984ebd935ecef93d956c0b9d6b
+Associating user x-0 in users.jenkins.io with email sagar.pimparkar@citiustech.com to git GitProvider user with login -0 as emails match
+Adding label jenkins.io/git-github-userid=-0 to user x-0 in users.jenkins.io
+WARNING: Failed to enrich commit fcb9cead381b02edd94b70655350ceb5cc1b02dd with issues: User.jenkins.io "x-0" is invalid: metadata.labels: Invalid value: "-0": a valid label must be an empty string or consist of alphanumeric characters, '-', '_' or '.', and must start and end with an alphanumeric character (e.g. 'MyValue',  or 'my_value',  or '12345', regex used for validation is '(([A-Za-z0-9][-A-Za-z0-9_.]*)?[A-Za-z0-9])?')
+Finding issues in commit messages using git format
+WARNING: No release found for ***********/angular-demo and tag v0.0.1 so creating a new release
+Updated the release information at https://github.com/***********/angular-demo/releases/tag/v0.0.1
+generated: /workspace/source/charts/angular-demo/templates/release.yaml
+Created Release angular-demo-0-0-1 resource in namespace **
+Updating PipelineActivity ***********-angular-demo-master-1 with version 0.0.1
+Updated PipelineActivities ***********-angular-demo-master-1 with release notes URL: https://github.com/***********/angular-demo/releases/tag/v0.0.1
+
+Showing logs for build [32msagarcitius-angular-demo-master-tnc5h-1[0m stage [32mfrom-build-pack[0m and container [32mstep-promote-helm-release[0m
+WARNING: No $CHART_REPOSITORY defined so using the default value of: http://jenkins-x-chartmuseum:8080
+Adding missing Helm repo: storage.googleapis.com https://storage.googleapis.com/chartmuseum.jenkins-x.io
+Successfully added Helm repository storage.googleapis.com.
+Adding missing Helm repo: jenkins-x-chartmuseum http://jenkins-x-chartmuseum:8080
+Successfully added Helm repository jenkins-x-chartmuseum.
+WARNING: No $CHART_REPOSITORY defined so using the default value of: http://jenkins-x-chartmuseum:8080
+Uploading chart file angular-demo-0.0.1.tgz to http://jenkins-x-chartmuseum:8080/api/charts
+Received 201 response: {"saved":true}
+
+Showing logs for build [32msagarcitius-angular-demo-master-tnc5h-1[0m stage [32mfrom-build-pack[0m and container [32mstep-promote-jx-promote[0m
+WARNING: prow based install so skip waiting for the merge of Pull Requests to go green as currently there is an issue with gettingstatuses from the PR, see https://github.com/jenkins-x/**/issues/2410
+WARNING: No $CHART_REPOSITORY defined so using the default value of: http://jenkins-x-chartmuseum:8080
+Promoting app angular-demo version 0.0.1 to namespace **-staging
+Created Pull Request: https://github.com/***********/environment-apewheat-staging/pull/1
+Added label updatebot to Pull Request https://github.com/***********/environment-apewheat-staging/pull/1
+got git provider status pending from PR https://github.com/***********/environment-apewheat-staging/pull/1
+got git provider status pending from PR https://github.com/***********/environment-apewheat-staging/pull/1
+got git provider status pending from PR https://github.com/***********/environment-apewheat-staging/pull/1
+Pull Request https://github.com/***********/environment-apewheat-staging/pull/1 is merged at sha f07f9740a9702afb973285a22b85ecfa54525728
+Pull Request merged but we are not waiting for the update pipeline to complete!
+WARNING: Could not find the service URL in namespace **-staging for names angular-demo, **-angular-demo, **-staging-angular-demo
